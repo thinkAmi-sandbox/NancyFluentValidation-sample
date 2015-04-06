@@ -1,0 +1,71 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<NancyFluentValidationSample.HomeModel>
+
+@using Nancy.ViewEngines.Razor;
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @if (Model.ErrorMessages != null)
+        {
+            <div>Error Messages</div>
+            <ul>
+                @foreach (string error in Model.ErrorMessages)
+                {
+                    <li>@error</li>
+                }
+            </ul>
+        }
+
+    </div>
+    <form method="post" action="/">
+        <fieldset>
+            <div>
+                <label for="Text">Text:</label>
+                <input type="text" name="Text" value="@Model.Text" />
+            </div>
+
+            <div>
+                <label for="Tel">Tel:</label>
+                <input type="text" name="Tel" value="@Model.Tel" />
+            </div>
+
+            <div>
+                <label for="TextArea">TextArea:</label>
+                <textarea name="TextArea">@Model.TextArea</textarea>
+            </div>
+
+            <div>
+                <label for="Url">Url:</label>
+                <input type="url" name="Url" value="@Model.Url" />
+            </div>
+
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" value="@Model.Email" />
+            </div>
+
+            <div>
+                <label for="Date">DateFrom:</label>
+                <input type="date" name="DateFrom" value="@string.Format("{0:yyyy-MM-dd}", @Model.DateFrom)" />
+            </div>
+
+            <div>
+                <label for="Date">DateTo:</label>
+                <input type="date" name="DateTo" value="@string.Format("{0:yyyy-MM-dd}", @Model.DateTo)" />
+            </div>
+
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

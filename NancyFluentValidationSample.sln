@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyFluentValidationSample", "NancyFluentValidationSample\NancyFluentValidationSample\NancyFluentValidationSample.csproj", "{95698990-F8D8-4E85-9357-3F5C3067300C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinAspNetHosting", "NancyFluentValidationSample\OwinAspNetHosting\OwinAspNetHosting.csproj", "{0DD625B7-3947-4D0C-A632-78D823288581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinSelfHosting", "NancyFluentValidationSample\OwinSelfHosting\OwinSelfHosting.csproj", "{2AA727DB-998C-4675-AA8D-B1A3C801ABA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D1401440-678C-4B70-8849-C63ADCAFF398}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95698990-F8D8-4E85-9357-3F5C3067300C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95698990-F8D8-4E85-9357-3F5C3067300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95698990-F8D8-4E85-9357-3F5C3067300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95698990-F8D8-4E85-9357-3F5C3067300C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD625B7-3947-4D0C-A632-78D823288581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD625B7-3947-4D0C-A632-78D823288581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD625B7-3947-4D0C-A632-78D823288581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD625B7-3947-4D0C-A632-78D823288581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AA727DB-998C-4675-AA8D-B1A3C801ABA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AA727DB-998C-4675-AA8D-B1A3C801ABA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AA727DB-998C-4675-AA8D-B1A3C801ABA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AA727DB-998C-4675-AA8D-B1A3C801ABA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
